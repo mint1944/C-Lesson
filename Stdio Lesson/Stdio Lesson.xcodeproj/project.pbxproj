@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1046A26B299CC3B5003647D4 /* STD_IO.c in Sources */ = {isa = PBXBuildFile; fileRef = 1046A26A299CC3B5003647D4 /* STD_IO.c */; };
 		10D45D2E2998BB6400BF8206 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 10D45D2D2998BB6400BF8206 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1046A269299CC3B5003647D4 /* STD_IO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STD_IO.h; sourceTree = "<group>"; };
+		1046A26A299CC3B5003647D4 /* STD_IO.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = STD_IO.c; sourceTree = "<group>"; };
 		10D45D2A2998BB6400BF8206 /* Stdio Lesson */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Stdio Lesson"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D45D2D2998BB6400BF8206 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +41,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1046A26C299CC448003647D4 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				1046A26A299CC3B5003647D4 /* STD_IO.c */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
+		1046A26D299CC451003647D4 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				1046A269299CC3B5003647D4 /* STD_IO.h */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
 		10D45D212998BB6400BF8206 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +76,8 @@
 		10D45D2C2998BB6400BF8206 /* Stdio Lesson */ = {
 			isa = PBXGroup;
 			children = (
+				1046A26D299CC451003647D4 /* source */,
+				1046A26C299CC448003647D4 /* header */,
 				10D45D2D2998BB6400BF8206 /* main.c */,
 			);
 			path = "Stdio Lesson";
@@ -120,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10D45D2E2998BB6400BF8206 /* main.c in Sources */,
+				1046A26B299CC3B5003647D4 /* STD_IO.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
