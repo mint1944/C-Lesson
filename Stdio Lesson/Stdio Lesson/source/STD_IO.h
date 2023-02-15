@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 
-int stdio(void);
+int stdi(void);
+int stdo(void);
 
 #endif /* STD_IO_h */

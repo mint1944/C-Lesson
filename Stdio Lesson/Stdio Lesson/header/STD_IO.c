@@ -7,7 +7,7 @@
 
 #include "STD_IO.h"
 
-int stdio(void) {
+int stdi(void) {
     // 在控制台输出文字
     // 使用printf进行输出
     printf("输出的文字 :) \n");
@@ -34,6 +34,18 @@ int stdio(void) {
     // 输出变量和定量
     printf("整数: %d 字符: %c 字符串: %s 浮点数1: %f 浮点数2: %f \n", integer, charater, charaterStr, doubleNumber, floatNumber);
     printf("定整数: %d 定字符: %c 定字符串: %s 定浮点数1: %f 定浮点数2: %f \n", intergerC, charaterC, charaterStrC, doubleNumberC, floatNumberC);
+    
+    return 0;
+}
+int stdo(void) {
+    char * storeNumber = NULL;
+    char ** stringS = &storeNumber;
+    printf("输入你想存储的数字: ");
+    scanf("%s", &storeNumber);
+    printf("\n 你输入的字符串是: %s\n", &storeNumber);
+    
+    printf("storeNumber的地址值是: %p 值是: %s\n", &storeNumber, &storeNumber);
+    printf("stringS的地址值是: %p 值是: %s\n", stringS, stringS);
     
     return 0;
 }

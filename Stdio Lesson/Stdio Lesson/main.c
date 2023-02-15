@@ -7,6 +7,7 @@
 #include "STD_IO.h"
 
 int main(int argc, const char * argv[]) {
-    stdio();
+    stdi();
+    stdo();
     return 0;
 }
