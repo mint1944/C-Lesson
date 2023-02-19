@@ -7,4 +7,4 @@ include_directories("C Basic")
 
 add_executable(C_Lesson
         "C Basic/main.c"
-        "C Basic/main.h")
+        "C Basic/main.h" "C Sturct/linkStruct.c")
