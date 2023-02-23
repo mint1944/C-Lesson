@@ -1,0 +1,3 @@
+/Users/mintk/Library/Mobile Documents/com~apple~CloudDocs/Code Lesson/C-Lesson/structLink/cmake-build-debug/CMakeFiles/structLink.dir
+/Users/mintk/Library/Mobile Documents/com~apple~CloudDocs/Code Lesson/C-Lesson/structLink/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mintk/Library/Mobile Documents/com~apple~CloudDocs/Code Lesson/C-Lesson/structLink/cmake-build-debug/CMakeFiles/rebuild_cache.dir

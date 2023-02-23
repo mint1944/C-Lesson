@@ -1,3 +1,0 @@
-/Users/mintk/Library/Mobile Documents/com~apple~CloudDocs/Code Lesson/C-Lesson/cmake-build-debug/CMakeFiles/C_Lesson.dir
-/Users/mintk/Library/Mobile Documents/com~apple~CloudDocs/Code Lesson/C-Lesson/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/mintk/Library/Mobile Documents/com~apple~CloudDocs/Code Lesson/C-Lesson/cmake-build-debug/CMakeFiles/rebuild_cache.dir

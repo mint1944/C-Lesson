@@ -1,0 +1,145 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: structLink_fixed_
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/mintk/Library/Mobile$ Documents/com~apple~CloudDocs/Code$ Lesson/C-Lesson/structLink(fixed)/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target structLink_fixed_
+
+
+#############################################
+# Order-only phony target for structLink_fixed_
+
+build cmake_object_order_depends_target_structLink_fixed_: phony || CMakeFiles/structLink_fixed_.dir
+
+build CMakeFiles/structLink_fixed_.dir/main.c.o: C_COMPILER__structLink_fixed__Debug /Users/mintk/Library/Mobile$ Documents/com~apple~CloudDocs/Code$ Lesson/C-Lesson/structLink(fixed)/main.c || cmake_object_order_depends_target_structLink_fixed_
+  DEP_FILE = CMakeFiles/structLink_fixed_.dir/main.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.5 -fcolor-diagnostics -std=gnu99
+  OBJECT_DIR = CMakeFiles/structLink_fixed_.dir
+  OBJECT_FILE_DIR = CMakeFiles/structLink_fixed_.dir
+
+build CMakeFiles/structLink_fixed_.dir/structLink.c.o: C_COMPILER__structLink_fixed__Debug /Users/mintk/Library/Mobile$ Documents/com~apple~CloudDocs/Code$ Lesson/C-Lesson/structLink(fixed)/structLink.c || cmake_object_order_depends_target_structLink_fixed_
+  DEP_FILE = CMakeFiles/structLink_fixed_.dir/structLink.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.5 -fcolor-diagnostics -std=gnu99
+  OBJECT_DIR = CMakeFiles/structLink_fixed_.dir
+  OBJECT_FILE_DIR = CMakeFiles/structLink_fixed_.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target structLink_fixed_
+
+
+#############################################
+# Link the executable structLink_fixed_
+
+build structLink_fixed_: C_EXECUTABLE_LINKER__structLink_fixed__Debug CMakeFiles/structLink_fixed_.dir/main.c.o CMakeFiles/structLink_fixed_.dir/structLink.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.5
+  OBJECT_DIR = CMakeFiles/structLink_fixed_.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = structLink_fixed_
+  TARGET_PDB = structLink_fixed_.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/mintk/Library/Mobile Documents/com~apple~CloudDocs/Code Lesson/C-Lesson/structLink(fixed)/cmake-build-debug" && "/Users/mintk/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/mintk/Library/Mobile Documents/com~apple~CloudDocs/Code Lesson/C-Lesson/structLink(fixed)/cmake-build-debug" && "/Users/mintk/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S"/Users/mintk/Library/Mobile Documents/com~apple~CloudDocs/Code Lesson/C-Lesson/structLink(fixed)" -B"/Users/mintk/Library/Mobile Documents/com~apple~CloudDocs/Code Lesson/C-Lesson/structLink(fixed)/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/mintk/Library/Mobile Documents/com~apple~CloudDocs/Code Lesson/C-Lesson/structLink(fixed)/cmake-build-debug
+
+build all: phony structLink_fixed_
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/mintk/Library/Mobile$ Documents/com~apple~CloudDocs/Code$ Lesson/C-Lesson/structLink(fixed)/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Users/mintk/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/mintk/Library/Mobile$ Documents/com~apple~CloudDocs/Code$ Lesson/C-Lesson/structLink(fixed)/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
